@@ -1,0 +1,25 @@
+
+:root{--brand:#0a7cff;--text:#111;--muted:#666;--bg:#fff;}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Arial,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+header{position:sticky;top:0;backdrop-filter:saturate(1.2) blur(6px);background:rgba(255,255,255,.85);border-bottom:1px solid #eee;z-index:10}
+.wrap{max-width:960px;margin:0 auto;padding:16px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .logo{width:36px;height:36px;border-radius:10px;background:var(--brand);display:inline-block}
+nav a{margin-right:12px;text-decoration:none;color:#333}
+nav a.active{font-weight:700}
+.hero{padding:48px 16px 24px;background:linear-gradient(180deg,rgba(10,124,255,.06),transparent)}
+.hero h1{margin:0 0 8px;font-size:clamp(24px,4.5vw,40px);letter-spacing:-.3px}
+.hero p{margin:0;color:var(--muted)}
+.cta{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px;max-width:480px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 16px;border-radius:14px;border:1px solid #e5e7eb;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--brand);color:#fff;border-color:transparent}
+.section{padding:28px 16px}
+.card{border:1px solid #eee;border-radius:16px;padding:16px;margin:10px 0;background:#fff}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+footer{border-top:1px solid #eee;color:var(--muted)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px}
+table{border-collapse:collapse;width:100%}
+td,th{border:1px solid #eee;padding:8px;text-align:left}

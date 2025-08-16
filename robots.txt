@@ -1,0 +1,7 @@
+# robots.txt for (주)해성골재건기
+User-agent: *
+Allow: /
+
+# Disallow: /admin/
+
+Sitemap: https://haesung-go.github.io/sitemap.xml
