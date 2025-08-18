@@ -1,0 +1,16 @@
+<header>
+  <div class="wrap brand">
+    <a href="{{ '/' | relative_url }}" aria-label="홈으로">
+      <span class="logo" aria-hidden="true"></span>
+    </a>
+    <strong>(주)해성골재건기</strong>
+  </div>
+  <nav class="wrap">
+    <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">홈</a>
+    <a href="{{ '/about.html' | relative_url }}" class="{% if page.url == '/about.html' %}active{% endif %}">회사소개</a>
+    <a href="{{ '/services.html' | relative_url }}" class="{% if page.url == '/services.html' %}active{% endif %}">사업분야</a>
+    <a href="{{ '/fleet.html' | relative_url }}" class="{% if page.url == '/fleet.html' %}active{% endif %}">보유차량</a>
+    <a href="{{ '/cases.html' | relative_url }}" class="{% if page.url == '/cases.html' %}active{% endif %}">납품실적</a>
+    <a href="{{ '/contact.html' | relative_url }}" class="{% if page.url == '/contact.html' %}active{% endif %}">문의하기</a>
+  </nav>
+</header>

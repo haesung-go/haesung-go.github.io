@@ -1,0 +1,35 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="gJe-Hqo86VRmgL1wUbkVWxZInVqnGinh3_81qUI5j58" />
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
+  <meta property="og:description" content="{{ page.description | default: site.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ '/og-image.png' | relative_url | absolute_url }}" />
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "{{ site.title }}",
+    "image": "{{ '/og-image.png' | relative_url | absolute_url }}",
+    "url": "{{ '/' | absolute_url }}",
+    "telephone": "+82-010-4826-9883",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "KR",
+      "addressRegion": "경기도",
+      "addressLocality": "여주시 가남읍",
+      "streetAddress": "여주남로 1234-8"
+    },
+    "description": "{{ site.description }}",
+    "areaServed": "경기/강원/충청"
+  }
+  </script>
+</head>
